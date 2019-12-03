@@ -53,14 +53,14 @@ let homeTown = me.homeTown;
 
 // CODE HERE
 function setColor(arr) {
-  arr.splice(3);
+  let newArr = arr.splice(0, 3);
   //   console.log(arr);
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === "blue") {
       arr[i] = "#4D4DFF";
     }
   }
-  background();
+  background(newArr[0], newArr[1], newArr[2]);
 }
 
 //////////////////Step 5////////////////////
